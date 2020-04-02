@@ -1,11 +1,11 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
-venue: "University of Queensland, St Lucia campus"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "Room W332, Forgan-Smith Building, University Drive"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+venue: "QCIF online workshop"        # brief name of host site without address (e.g., "Euphoric State University")
+address: "Virtual lesson taught over Zoom"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "au"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
-latitude: "-27.497082"     # decimal latitude of workshop venue (use https://www.latlong.net/)
-longitude: "153.012741"    # decimal longitude of the workshop venue (use https://www.latlong.net)
+latitude:      # decimal latitude of workshop venue (use https://www.latlong.net/)
+longitude:     # decimal longitude of the workshop venue (use https://www.latlong.net)
 humandate: "Jun 1-2, 2020"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "9:00am - 5:00pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2020-06-01      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
@@ -28,12 +28,6 @@ double quotation marks around the value, unless specified otherwise.
 And run 'make workshop-check' *before* committing to make sure that changes are good.
 {% endcomment %}
 
-
-{% comment %}
-8< ============= For a workshop delete from here =============
-For a workshop please delete the following block until the next dashed-line
-
-{% endcomment %}
 
 
 {% comment %}
@@ -105,6 +99,10 @@ if the latitude and longitude of the workshop have been set.  You
 can use https://itouchmap.com/latlong.html to find the lat/long of an
 address.
 {% endcomment %}
+<p id="where">
+  <strong>Where:</strong>
+  Virtual workshop taught over Zoom
+</p>
 {% if page.latitude and page.longitude %}
 <p id="where">
   <strong>Where:</strong>
@@ -135,8 +133,7 @@ SPECIAL REQUIREMENTS
 Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
-  <strong>Requirements:</strong> Participants must bring a laptop with a
-  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on and can be joined to a wireless network. They should have a few specific software packages installed (listed <a href="#setup">below</a>).
+  <strong>Requirements:</strong> Participants must provide their own computer with a Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) and have access to a stable internet connection sufficient for videoconferencing. They should have a few specific software packages installed (listed <a href="#setup">below</a>).</p>
 </p>
 
 {% comment %}
@@ -145,6 +142,8 @@ ACCESSIBILITY
 Modify the block below if there are any barriers to accessibility or
 special instructions.
 {% endcomment %}
+{% comment %}
+Commented out this section as not relevant to a virtual workshop
 <p id="accessibility">
   <strong>Accessibility:</strong> We are committed to making this workshop
   accessible to everybody.
@@ -162,6 +161,7 @@ special instructions.
   get in touch (using contact details below) and we will
   attempt to provide them.
 </p>
+{% endcomment %}
 
 {% comment %}
 CONTACT EMAIL ADDRESS
@@ -308,8 +308,7 @@ please preview your site before committing, and make sure to run
   Library Carpentry
   {% endif %}
   workshop,
-  you will need to bring your own computer ready to use <a href = "https://my.uq.edu.au/information-and-services/information-technology/internet-and-wifi/connecting-wifi"> the UQ Eduroam wireless network</a>.
-  In addition, you will need access to the software described below and an up-to-date web browser.
+  you will need to provide your own computer with reliable internet connection. In addition, you will need access to the software described below and an up-to-date web browser.
 </p>
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
